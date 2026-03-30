@@ -8,7 +8,7 @@ API_KEY = os.getenv("WEATHER_API_KEY", "ac04f479dc6b6a2159158fc56dd23489")
 
 @app.route("/")
 def home():
-    return "Working"
+    return render_template("index.html")
 
 @app.route("/get_weather", methods=["POST"])
 def get_weather():
